@@ -12,7 +12,7 @@ import static com.json.demo.model.Constants.json;
 public class JacksonJsonMain {
     public static void main(String[] args) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        //Jackson Support for LocalDate
+        //Jackson Support for LocalDate using jackson-datatype-jsr310
         mapper.registerModule(new JavaTimeModule());
         //Configuration to ignore extra fields
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
