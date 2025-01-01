@@ -3,17 +3,8 @@ package com.json.demo.model;
 public class Address {
     private String street;
     private String city;
-
-    public Address(String street, String city, String state, String zipcode) {
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.zipcode = zipcode;
-    }
-
-    public Address() {
-    }
-
+    private String state;
+    private String zipcode;
     public String getStreet() {
         return street;
     }
@@ -45,7 +36,4 @@ public class Address {
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
-
-    private String state;
-    private String zipcode;
 }

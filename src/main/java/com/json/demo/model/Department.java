@@ -1,24 +1,23 @@
 package com.json.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+import java.io.Serializable;
+
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property = "deptId",scope = Department.class)
 public class Department {
-    private int id;
-
-    public Department() {
+    public int getDeptId() {
+        return deptId;
     }
 
-    public Department(int id, String name, Employee head) {
-        this.id = id;
-        this.name = name;
-        this.head = head;
+    public void setDeptId(int deptId) {
+        this.deptId = deptId;
     }
+    @JsonProperty("deptId")
+    private int deptId;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

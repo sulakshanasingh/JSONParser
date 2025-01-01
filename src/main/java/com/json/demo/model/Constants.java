@@ -4,12 +4,12 @@ public class Constants {
     public static final String json = """
             {
               "employee": {
-                "id": 101,
+                "empId": 101,
                 "name": "Alice Johnson",
                 "role": "MANAGER",
                 "start_date": "2023-01-15",
                 "department": {
-                  "id": 501,
+                  "deptId": 501,
                   "name": "Engineering",
                   "head": {
                     "id": 101,
@@ -30,7 +30,7 @@ public class Constants {
               },
               "team_members": [
                 {
-                  "id": 102,
+                  "empId": 102,
                   "name": "Bob Smith",
                   "role": "DEVELOPER",
                   "start_date": null,
@@ -41,15 +41,15 @@ public class Constants {
                   }
                 },
                 {
-                  "id": 103,
+                  "empId": 103,
                   "name": "Carol White",
                   "role": "INTERN",
                   "start_date": "2024-06-01",
                   "department": {
-                    "id": 502,
+                    "deptId": 502,
                     "name": "Human Resources",
                     "head": {
-                      "id": 201,
+                      "empId": 201,
                       "name": "David Green",
                       "role": "DIRECTOR"
                     }
